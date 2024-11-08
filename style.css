@@ -99,18 +99,12 @@ nav .submenu .sub-menu li a {
         flex-direction: column;
         width: 100%;
         background-color: #003366;
-        margin-top: 10px;
-        border-top: 2px solid #006699;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 0;
     }
 
     nav ul li a {
         padding: 1em;
         font-size: 18px;
+        text-align: center;
     }
 
     #nav-toggle {
