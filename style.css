@@ -113,7 +113,7 @@ nav .submenu .sub-menu li a {
 
    /* Mostrar el menú cuando la clase nav-open está activada */
     .nav-open ul {
-        display: flex; /* Muestra el menú como una columna en pantallas pequeñas */
+        display: none; /* Muestra el menú como una columna en pantallas pequeñas */
     }
 
 }
