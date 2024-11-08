@@ -112,7 +112,7 @@ nav .submenu .sub-menu li a {
     }
 
     .nav-open ul {
-        display: none;
+        display: flex;
     }
 
 }
