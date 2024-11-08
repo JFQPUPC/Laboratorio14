@@ -81,7 +81,6 @@ nav .submenu .sub-menu li a {
     cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         display: none;
