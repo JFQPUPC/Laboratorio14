@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('nav-toggle').addEventListener('click', function() {
-        document.querySelector('nav ul').classList.toggle('nav-open');
-    });
+const navToggle = document.getElementById('nav-toggle');
+const nav = document.querySelector('nav');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
 });
