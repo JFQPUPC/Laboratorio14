@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,10 +9,11 @@ header {
 }
 
 nav {
-    background-color: #333;
+    background-color: #003366; 
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-between; 
     padding: 0.5em 1em;
     position: fixed;
     width: 100%;
@@ -19,13 +21,11 @@ nav {
     z-index: 999;
 }
 
-nav .logo {
-    flex: 1;
-}
-
 nav .logo h1 {
+    color: #ffcc00;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav ul {
@@ -37,45 +37,43 @@ nav ul {
 
 nav ul li {
     position: relative;
+    margin: 0 1em; 
 }
 
 nav ul li a {
-    display: block;
     color: #fff;
     text-decoration: none;
-    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    color: #ffcc00; 
 }
 
 .submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #002244; 
     display: none;
     list-style: none;
-    margin: 0;
     padding: 0;
-    min-width: 150px;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .submenu li a {
+    display: block;
     padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
 }
 
 nav ul li:hover .submenu {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-    font-size: 1.5em;
-    color: #fff;
-    padding: 0.5em;
-    cursor: pointer;
+    display: block; 
 }
 
 section {
@@ -89,29 +87,49 @@ footer {
     background-color: #eee;
 }
 
+#nav-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #333;
+        background-color: #003366;
     }
+
+    nav ul li {
+        margin: 0;
+    }
+
     nav ul li a {
         padding: 1em;
-        text-align: center;
+        text-align: left;
     }
 
     #nav-toggle {
-        display: block;
+        display: block; 
     }
 
     .nav-open ul {
         display: flex;
     }
+
     .submenu {
-        position: static;
+        position: static; 
+        box-shadow: none;
     }
-    .submenu li a {
-        text-align: center;
-    }
+}
+
+nav ul li a:active {
+    color: #ffcc00;
 }
